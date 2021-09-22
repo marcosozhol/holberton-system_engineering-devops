@@ -1,2 +1,2 @@
 #!/bin/bash
-fail /tmp/*iamafile
+fail /tmp/.iamafile
