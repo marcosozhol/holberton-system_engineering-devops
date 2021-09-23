@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod a-rwx foldername
+chmod a-x foldername
