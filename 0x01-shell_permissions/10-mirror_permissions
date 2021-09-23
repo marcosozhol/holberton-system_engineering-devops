@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod --a=a_hello olleh
+chmod --a=hello olleh
