@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# stops 4-to_infinity_and_beyond process
+
+proc_ejc=$(pgrep -f "7-highlander")
+kill "$proc_ejc"
