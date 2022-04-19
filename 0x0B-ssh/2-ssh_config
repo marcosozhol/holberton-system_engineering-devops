@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# SSH configuration file for the local SSH client
+HashKnowHosts yes
+GASSAPIAuthentication yes
+GASSAPIDelegateCredentials no
+IdentyFile ~/.ssh/school
+PasswordAutentication no
