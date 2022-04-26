@@ -7,5 +7,5 @@ sudo echo "Hello World" | sudo tee /var/www/html/index.html > /dev/null
 sudo sed -i '/server_name _;/a rewrite ^/redirect_me/ https://www.google.com permanent;' /etc/nginx/sites-available/default
 sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html > /dev/null
 sudo sed -i '/server_name _;/a error_page 404 /custom_404.html;\nlocation = /custom_404.html {\nroot /var/www/html;\ninternal;\n}' /etc/nginx/sites-available/default
-sudo sed -i '/server {/a add_header X-Served-By $hostname;\n' /etc/nginx/sites-available/default
+sudo sed -i '/listen [::]:80 default_server;/a add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
 sudo service nginx restart
