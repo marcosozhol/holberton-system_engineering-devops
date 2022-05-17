@@ -5,7 +5,6 @@ returns information about his/her TODO list progress
 """
 
 import json
-import csv
 import requests
 import sys
 
