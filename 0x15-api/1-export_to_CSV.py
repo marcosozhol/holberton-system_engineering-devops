@@ -14,7 +14,7 @@ if __name__ == "__main__":
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
     username = user.get("username")
     todos = requests.get(url + "user/{}/todos".format(sys.argv[1])).json()
-    
+
     with open("{}.csv".format(user_id), "w", newline="") as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         [writer.writerow(
