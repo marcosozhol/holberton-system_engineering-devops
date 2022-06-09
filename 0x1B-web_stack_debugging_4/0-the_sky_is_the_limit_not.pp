@@ -2,7 +2,7 @@
 
 # Increase the default file ULIMIT
 exec { 'fix--for-nginx':
-  command => 'sed -i "s/15/4096" /etc/default/nginx',
+  command => 'sed -i "s/15/4096" /etc/nginx/nginx.conf',
   path    => '/usr/local/bin/:/bin/'
 } ->
 
